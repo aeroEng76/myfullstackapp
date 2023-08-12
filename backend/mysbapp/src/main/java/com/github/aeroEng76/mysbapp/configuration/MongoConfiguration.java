@@ -14,6 +14,9 @@ public class MongoConfiguration extends AbstractReactiveMongoConfiguration {
     @Value("${spring.data.mongodb.database}")
     private String dbName;
 
+    @Value("${spring.data.mongodb.uri}")
+    private String uri;
+
     @Override
     protected String getDatabaseName() {
         return dbName;
@@ -27,7 +30,7 @@ public class MongoConfiguration extends AbstractReactiveMongoConfiguration {
     @Override
     @Bean
     public MongoClient reactiveMongoClient() {
-        return MongoClients.create();
+        return MongoClients.create(uri);
     }
 
     @Bean

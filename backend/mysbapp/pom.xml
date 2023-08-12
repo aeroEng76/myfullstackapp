@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.github.aeroEng76</groupId>
 	<artifactId>mysbapp</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0-SNAPSHOT</version>
 	<name>mysbapp</name>
 	<description>Spring Boot backend for my fullstack app</description>
 	<properties>
